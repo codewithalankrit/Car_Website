@@ -41,8 +41,7 @@ function init3DViewer() {
   // Set model path based on the car name
   switch (modalTitle) {
     case 'Hyundai Creta':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2023_hyundai_creta.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2023_hyundai_creta.glb';
       // Reduced lighting for Creta
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -51,8 +50,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.8);
       break;
     case 'Pagani Utopia':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2023_pagani_utopia.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2023_pagani_utopia.glb';
       // Reduced lighting for Pagani Utopia
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -61,8 +59,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.4);
       break;
     case 'Pagani Huayra BC':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/pagani_huayra_bc.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/pagani_huayra_bc.glb';
       // Increased lighting for Huayra BC
       ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.7);
@@ -72,7 +69,7 @@ function init3DViewer() {
       break;
     case 'Lamborghini Aventador':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/lamborghini_aventador_with_interior.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/lamborghini_aventador_with_interior.glb';
       // Further reduced lighting for Aventador
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -81,8 +78,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.4);
       break;
     case 'Lamborghini Huracan':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/lamborghini_huracan.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/lamborghini_huracan.glb';
       // Further reduced lighting for Huracan
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -92,7 +88,7 @@ function init3DViewer() {
       break;
     case 'Lamborghini Urus':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2023_lamborghini_urus_performante.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2023_lamborghini_urus_performante.glb';
       // Further reduced lighting for Urus
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -102,7 +98,7 @@ function init3DViewer() {
       break;
     case 'Hennessey Venom F5':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2023_hennessey_venom_f5_roadster.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2023_hennessey_venom_f5_roadster.glb';
       // Further increased lighting for Venom F5
       ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.3);
@@ -112,7 +108,7 @@ function init3DViewer() {
       break;
     case 'Hennessey Exorcist':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2018_hennessey_the_exorcist_camaro_zl1.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2018_hennessey_the_exorcist_camaro_zl1.glb';
       // Reduced lighting for Exorcist
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.9);
@@ -122,7 +118,7 @@ function init3DViewer() {
       break;
     case 'Hennessey Vehnom GT':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/hennessy_vehnom_gt_2010_fully_rigged_free.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/hennessy_vehnom_gt_2010_fully_rigged_free.glb';
       // Further increased lighting for Vehnom GT
       ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.9);
@@ -131,8 +127,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.8);
       break;
     case 'Ferrari SF90 Stradale':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/ferrari_sf90_stradale.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/ferrari_sf90_stradale.glb';
       // Further increased lighting for SF90 Stradale
       ambientLight = new THREE.AmbientLight(0xffffff, 2.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.9);
@@ -141,8 +136,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 2.8);
       break;
     case 'Ferrari 296 GTB':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2023_ferrari_296_gts.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2023_ferrari_296_gts.glb';
       // Reduced lighting for 296 GTB
       ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.9);
@@ -151,8 +145,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.8);
       break;
     case 'Ferrari Purosangue':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2023_ferrari_purosangue.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2023_ferrari_purosangue.glb';
       // Further reduced lighting for Purosangue
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.9);
@@ -162,7 +155,7 @@ function init3DViewer() {
       break;
     case 'McLaren 765LT':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2022_mclaren_765lt_spider.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2022_mclaren_765lt_spider.glb';
       // Reduced lighting for 765LT
       ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.7);
@@ -171,8 +164,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.6);
       break;
     case 'McLaren Senna':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/mclaren_senna_free.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/mclaren_senna_free.glb';
       // Reduced lighting for Senna
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -182,7 +174,7 @@ function init3DViewer() {
       break;
     case 'Bugatti Chiron':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2022_bugatti_chiron_profilee.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2022_bugatti_chiron_profilee.glb';
       // Set lighting for Chiron
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -191,8 +183,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.4);
       break;
     case 'Bugatti Divo':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/bugati_divo.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/bugati_divo.glb';
       // Maximum lighting for Divo
       ambientLight = new THREE.AmbientLight(0xffffff, 5.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 5.5);
@@ -201,8 +192,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 4.5);
       break;
     case 'Bugatti Centodieci':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2019_bugatti_centodieci.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2019_bugatti_centodieci.glb';
       // Increased lighting for Centodieci
       ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.3);
@@ -211,8 +201,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.2);
       break;
     case 'Grand Vitara':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/suzuki_grand_vitara.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/suzuki_grand_vitara.glb';
       // Further increased bright lighting for Grand Vitara
       ambientLight = new THREE.AmbientLight(0xffffff, 5.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 5.5);
@@ -221,8 +210,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 4.5);
       break;
     case 'BYD Sealion 7':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2024_byd_sealion_7.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2024_byd_sealion_7.glb';
       // Bright lighting for BYD Sealion 7
       ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.0);
@@ -231,8 +219,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.0);
       break;
     case 'Skoda Superb':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2017_skoda_superb.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2017_skoda_superb.glb';
       // Set lighting for Skoda Superb
       ambientLight = new THREE.AmbientLight(0xffffff, 1.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
@@ -241,8 +228,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.5);
       break;
     case 'MG Hector':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/mg_hector.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/mg_hector.glb';
       // Further reduced lighting for MG Hector
       ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
@@ -251,8 +237,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.5);
       break;
     case 'Toyota Fortuner':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/toyota_fortuner_2021.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/toyota_fortuner_2021.glb';
       // Set lighting for Toyota Fortuner
       ambientLight = new THREE.AmbientLight(0xffffff, 2.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.5);
@@ -261,8 +246,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.5);
       break;
     case 'Honda City':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/honda_city_2017.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/honda_city_2017.glb';
       // Set lighting for Honda City
       ambientLight = new THREE.AmbientLight(0xffffff, 2.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.5);
@@ -272,7 +256,7 @@ function init3DViewer() {
       break;
     case 'Volkswagen Virtus':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2022_volkswagen_virtus_gt.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2022_volkswagen_virtus_gt.glb';
       // Reduced lighting for Volkswagen Virtus GT
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -281,7 +265,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.8);
       break;
     case 'BMW 3-Series':
-      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/bmwM3.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/bmwM3.glb';
       // Adjusted lighting for BMW M3 interior
       ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
@@ -293,8 +277,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.3);
       break;
     case 'Audi RS Q8':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2023_audi_rs_q8.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2023_audi_rs_q8.glb';
       // Further reduced lighting for Audi RS Q8
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -304,7 +287,7 @@ function init3DViewer() {
       break;
     case 'Porsche 911 Carrera S':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/porsche_911_carrera_s_991.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/porsche_911_carrera_s_991.glb';
       // Reduced lighting for Porsche 911
       ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
@@ -313,8 +296,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.2);
       break;
     case 'Koenigsegg Jesko':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2020_koenigsegg_jesko.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2020_koenigsegg_jesko.glb';
       // Drastically reduced lighting for Koenigsegg Jesko
       ambientLight = new THREE.AmbientLight(0xffffff, 0.01);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.01);
@@ -323,8 +305,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.01);
       break;
     case 'Koenigsegg Gemera':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2021_koenigsegg_gemera.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2021_koenigsegg_gemera.glb';
       // Reduced lighting for Gemera
       ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
@@ -333,8 +314,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.2);
       break;
     case 'Koenigsegg Regera':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2015_koenigsegg_regera.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2015_koenigsegg_regera.glb';
       // Extremely reduced lighting for Regera
       ambientLight = new THREE.AmbientLight(0xffffff, 0.01);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.01);
@@ -344,7 +324,7 @@ function init3DViewer() {
       break;
     case 'McLaren Artura':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2025_mclaren_artura_spider.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2025_mclaren_artura_spider.glb';
       // Further reduced lighting for Artura
       ambientLight = new THREE.AmbientLight(0xffffff, 0.005);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.005);
@@ -353,8 +333,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.005);
       break;
     case 'Rimac Nevera':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/rimac_nevera.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/rimac_nevera.glb';
       // Greatly increased lighting for Nevera
       ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -363,8 +342,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.5);
       break;
     case 'Rimac Concept One':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2016_rimac_concept_s.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2016_rimac_concept_s.glb';
       // Set lighting for Concept One
       ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -373,8 +351,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.5);
       break;
     case 'Aston Martin Valkyrie':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/aston_martin_valkyrie.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/aston_martin_valkyrie.glb';
       // Greatly increased lighting for Valkyrie
       ambientLight = new THREE.AmbientLight(0xffffff, 3.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 3.0);
@@ -383,8 +360,7 @@ function init3DViewer() {
       hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x444444, 3.0);
       break;
     case 'Aston Martin Vulcan':
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/aston_martin_vulcan.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/aston_martin_vulcan.glb';
       // Greatly increased lighting for Vulcan
       ambientLight = new THREE.AmbientLight(0xffffff, 3.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 3.0);
@@ -394,7 +370,7 @@ function init3DViewer() {
       break;
     case 'Aston Martin One-77':
       modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/2011_aston_martin_one-77.glb';
+        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/2011_aston_martin_one-77.glb';
       // Increased lighting for One-77
       ambientLight = new THREE.AmbientLight(0xffffff, 5.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 5.5);
@@ -404,8 +380,7 @@ function init3DViewer() {
       break;
     // Add more cases for other car models as needed
     default:
-      modelPath =
-        'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/car-models-cdn/suzuki_grand_vitara.glb';
+      modelPath = 'https://pub-059de5f81a2542499b4d9798ad964d2c.r2.dev/suzuki_grand_vitara.glb';
   }
 
   // Load the 3D model
