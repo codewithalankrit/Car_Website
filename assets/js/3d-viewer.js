@@ -36,13 +36,13 @@ function init3DViewer() {
   // Get the current car model from the modal title
   const modalTitle = document.querySelector('#car3dModal .modal-title').textContent;
   let modelPath =
-    'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/suzuki_grand_vitara.glb'; // Default model path
+    'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/suzuki_grand_vitara.glb'; // Default model path
 
   // Set model path based on the car name
   switch (modalTitle) {
     case 'Hyundai Creta':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2023_hyundai_creta.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2023_hyundai_creta.glb';
       // Reduced lighting for Creta
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -52,7 +52,7 @@ function init3DViewer() {
       break;
     case 'Pagani Utopia':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2023_pagani_utopia.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2023_pagani_utopia.glb';
       // Reduced lighting for Pagani Utopia
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -62,7 +62,7 @@ function init3DViewer() {
       break;
     case 'Pagani Huayra BC':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/pagani_huayra_bc.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/pagani_huayra_bc.glb';
       // Increased lighting for Huayra BC
       ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.7);
@@ -72,7 +72,7 @@ function init3DViewer() {
       break;
     case 'Lamborghini Aventador':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/lamborghini_aventador_with_interior.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/lamborghini_aventador_with_interior.glb';
       // Further reduced lighting for Aventador
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -82,7 +82,7 @@ function init3DViewer() {
       break;
     case 'Lamborghini Huracan':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/lamborghini_huracan.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/lamborghini_huracan.glb';
       // Further reduced lighting for Huracan
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -92,7 +92,7 @@ function init3DViewer() {
       break;
     case 'Lamborghini Urus':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2023_lamborghini_urus_performante.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2023_lamborghini_urus_performante.glb';
       // Further reduced lighting for Urus
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -102,7 +102,7 @@ function init3DViewer() {
       break;
     case 'Hennessey Venom F5':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2023_hennessey_venom_f5_roadster.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2023_hennessey_venom_f5_roadster.glb';
       // Further increased lighting for Venom F5
       ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.3);
@@ -112,7 +112,7 @@ function init3DViewer() {
       break;
     case 'Hennessey Exorcist':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2018_hennessey_the_exorcist_camaro_zl1.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2018_hennessey_the_exorcist_camaro_zl1.glb';
       // Reduced lighting for Exorcist
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.9);
@@ -122,7 +122,7 @@ function init3DViewer() {
       break;
     case 'Hennessey Vehnom GT':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/hennessy_vehnom_gt_2010_fully_rigged_free.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/hennessy_vehnom_gt_2010_fully_rigged_free.glb';
       // Further increased lighting for Vehnom GT
       ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.9);
@@ -132,7 +132,7 @@ function init3DViewer() {
       break;
     case 'Ferrari SF90 Stradale':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/ferrari_sf90_stradale.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/ferrari_sf90_stradale.glb';
       // Further increased lighting for SF90 Stradale
       ambientLight = new THREE.AmbientLight(0xffffff, 2.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.9);
@@ -142,7 +142,7 @@ function init3DViewer() {
       break;
     case 'Ferrari 296 GTB':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2023_ferrari_296_gts.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2023_ferrari_296_gts.glb';
       // Reduced lighting for 296 GTB
       ambientLight = new THREE.AmbientLight(0xffffff, 1.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.9);
@@ -152,7 +152,7 @@ function init3DViewer() {
       break;
     case 'Ferrari Purosangue':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2023_ferrari_purosangue.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2023_ferrari_purosangue.glb';
       // Further reduced lighting for Purosangue
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.9);
@@ -162,7 +162,7 @@ function init3DViewer() {
       break;
     case 'McLaren 765LT':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2022_mclaren_765lt_spider.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2022_mclaren_765lt_spider.glb';
       // Reduced lighting for 765LT
       ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.7);
@@ -172,7 +172,7 @@ function init3DViewer() {
       break;
     case 'McLaren Senna':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/mclaren_senna_free.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/mclaren_senna_free.glb';
       // Reduced lighting for Senna
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -182,7 +182,7 @@ function init3DViewer() {
       break;
     case 'Bugatti Chiron':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2022_bugatti_chiron_profilee.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2022_bugatti_chiron_profilee.glb';
       // Set lighting for Chiron
       ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -192,7 +192,7 @@ function init3DViewer() {
       break;
     case 'Bugatti Divo':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/bugati_divo.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/bugati_divo.glb';
       // Maximum lighting for Divo
       ambientLight = new THREE.AmbientLight(0xffffff, 5.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 5.5);
@@ -202,7 +202,7 @@ function init3DViewer() {
       break;
     case 'Bugatti Centodieci':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2019_bugatti_centodieci.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2019_bugatti_centodieci.glb';
       // Increased lighting for Centodieci
       ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.3);
@@ -212,7 +212,7 @@ function init3DViewer() {
       break;
     case 'Grand Vitara':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/suzuki_grand_vitara.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/suzuki_grand_vitara.glb';
       // Further increased bright lighting for Grand Vitara
       ambientLight = new THREE.AmbientLight(0xffffff, 5.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 5.5);
@@ -222,7 +222,7 @@ function init3DViewer() {
       break;
     case 'BYD Sealion 7':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2024_byd_sealion_7.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2024_byd_sealion_7.glb';
       // Bright lighting for BYD Sealion 7
       ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.0);
@@ -232,7 +232,7 @@ function init3DViewer() {
       break;
     case 'Skoda Superb':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2017_skoda_superb.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2017_skoda_superb.glb';
       // Set lighting for Skoda Superb
       ambientLight = new THREE.AmbientLight(0xffffff, 1.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
@@ -242,7 +242,7 @@ function init3DViewer() {
       break;
     case 'MG Hector':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/mg_hector.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/mg_hector.glb';
       // Further reduced lighting for MG Hector
       ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
@@ -252,7 +252,7 @@ function init3DViewer() {
       break;
     case 'Toyota Fortuner':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/toyota_fortuner_2021.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/toyota_fortuner_2021.glb';
       // Set lighting for Toyota Fortuner
       ambientLight = new THREE.AmbientLight(0xffffff, 2.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.5);
@@ -262,7 +262,7 @@ function init3DViewer() {
       break;
     case 'Honda City':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/honda_city_2017.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/honda_city_2017.glb';
       // Set lighting for Honda City
       ambientLight = new THREE.AmbientLight(0xffffff, 2.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 2.5);
@@ -272,7 +272,7 @@ function init3DViewer() {
       break;
     case 'Volkswagen Virtus':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2022_volkswagen_virtus_gt.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2022_volkswagen_virtus_gt.glb';
       // Reduced lighting for Volkswagen Virtus GT
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -282,7 +282,7 @@ function init3DViewer() {
       break;
     case 'BMW 3-Series':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/bmwM3.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/bmwM3.glb';
       // Adjusted lighting for BMW M3 interior
       ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
@@ -295,7 +295,7 @@ function init3DViewer() {
       break;
     case 'Audi RS Q8':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2023_audi_rs_q8.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2023_audi_rs_q8.glb';
       // Further reduced lighting for Audi RS Q8
       ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
       directionalLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -305,7 +305,7 @@ function init3DViewer() {
       break;
     case 'Porsche 911 Carrera S':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/porsche_911_carrera_s_991.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/porsche_911_carrera_s_991.glb';
       // Reduced lighting for Porsche 911
       ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
@@ -315,7 +315,7 @@ function init3DViewer() {
       break;
     case 'Koenigsegg Jesko':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2020_koenigsegg_jesko.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2020_koenigsegg_jesko.glb';
       // Drastically reduced lighting for Koenigsegg Jesko
       ambientLight = new THREE.AmbientLight(0xffffff, 0.01);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.01);
@@ -325,7 +325,7 @@ function init3DViewer() {
       break;
     case 'Koenigsegg Gemera':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2021_koenigsegg_gemera.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2021_koenigsegg_gemera.glb';
       // Reduced lighting for Gemera
       ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
@@ -335,7 +335,7 @@ function init3DViewer() {
       break;
     case 'Koenigsegg Regera':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2015_koenigsegg_regera.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2015_koenigsegg_regera.glb';
       // Extremely reduced lighting for Regera
       ambientLight = new THREE.AmbientLight(0xffffff, 0.01);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.01);
@@ -345,7 +345,7 @@ function init3DViewer() {
       break;
     case 'McLaren Artura':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2025_mclaren_artura_spider.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2025_mclaren_artura_spider.glb';
       // Further reduced lighting for Artura
       ambientLight = new THREE.AmbientLight(0xffffff, 0.005);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.005);
@@ -355,7 +355,7 @@ function init3DViewer() {
       break;
     case 'Rimac Nevera':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/rimac_nevera.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/rimac_nevera.glb';
       // Greatly increased lighting for Nevera
       ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -365,7 +365,7 @@ function init3DViewer() {
       break;
     case 'Rimac Concept One':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2016_rimac_concept_s.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2016_rimac_concept_s.glb';
       // Set lighting for Concept One
       ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
       directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
@@ -375,7 +375,7 @@ function init3DViewer() {
       break;
     case 'Aston Martin Valkyrie':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/aston_martin_valkyrie.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/aston_martin_valkyrie.glb';
       // Greatly increased lighting for Valkyrie
       ambientLight = new THREE.AmbientLight(0xffffff, 3.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 3.0);
@@ -385,7 +385,7 @@ function init3DViewer() {
       break;
     case 'Aston Martin Vulcan':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/aston_martin_vulcan.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/aston_martin_vulcan.glb';
       // Greatly increased lighting for Vulcan
       ambientLight = new THREE.AmbientLight(0xffffff, 3.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 3.0);
@@ -395,7 +395,7 @@ function init3DViewer() {
       break;
     case 'Aston Martin One-77':
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/2011_aston_martin_one-77.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/2011_aston_martin_one-77.glb';
       // Increased lighting for One-77
       ambientLight = new THREE.AmbientLight(0xffffff, 5.0);
       directionalLight = new THREE.DirectionalLight(0xffffff, 5.5);
@@ -406,7 +406,7 @@ function init3DViewer() {
     // Add more cases for other car models as needed
     default:
       modelPath =
-        'https://raw.githubusercontent.com/codewithalankrit/Car_Website/main/assets/models/suzuki_grand_vitara.glb';
+        'https://github.com/codewithalankrit/Car_Website/releases/download/v1.0.0/suzuki_grand_vitara.glb';
   }
 
   // Load the 3D model
